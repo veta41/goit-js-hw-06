@@ -1,0 +1,10 @@
+
+#boxes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-box + .new-box{
+  margin-left: 10px;
+}
