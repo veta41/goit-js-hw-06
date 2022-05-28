@@ -15,10 +15,14 @@ inputEl.addEventListener("blur", onInputClassAdd);
 function onInputClassAdd(event) {
 if(event.currentTarget.value.length === parseInt(symbolLength)) {
     
+  
   inputEl.classList.add("valid");
   inputEl.classList.remove("invalid");
+
+
     } else {
 
+     
   inputEl.classList.add("invalid"); 
   inputEl.classList.remove("valid");
   }
