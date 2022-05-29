@@ -12,7 +12,7 @@ refs.textInputEl.addEventListener("input", onInputChangesName)
 
 function onInputChangesName(event) {
 
-  if(refs.outputEl.textContent = ""){
+  if(refs.textInputEl.value.trim() === ""){
     refs.outputEl.textContent = "Anonymous"
  }
  

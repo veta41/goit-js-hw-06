@@ -17,12 +17,27 @@
     } = event.currentTarget;
 
    
-     if (
-       email.value === "" || password.value === ""
-     ) {alert("Внимание! Все поля должны быть заполнены!");}
+    const users = {
+      email: '',
+      password: '',
 
-     else{console.log(`Email : ${email.value}, Password: ${password.value}`);}
+    }
+  
+
+     if (email.value === "" || password.value === "")
+      {
+        alert("Внимание! Все поля должны быть заполнены!");
       
+      } else {
+        
+          users.email = email.value;
+          users.password = password.value;
+     
+     
+      }
+  
      event.currentTarget.reset();
+
+     console.log(users);
       });
 

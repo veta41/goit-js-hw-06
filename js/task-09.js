@@ -13,7 +13,10 @@ colorText : document.querySelector(".color")
 
 refs.btnchangeColor.addEventListener("click", () => { 
 refs.colorText.textContent = getRandomHexColor();
-refs.body.style.backgroundColor = getRandomHexColor();
+refs.body.style.backgroundColor = refs.colorText.textContent;
+
+
+
  });
 
 
